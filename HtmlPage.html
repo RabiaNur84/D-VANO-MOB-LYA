@@ -1,0 +1,415 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Divano Mobilya - Özgün Tasarım, Kaliteli Ürünler</title>
+    <link type="text/css" rel="stylesheet" href="lightslider/css/lightslider.css">
+    <link rel="stylesheet" href="stiller/still.css">
+    <script src="lightslider/js/jquery.min.js"></script>
+    <script src="lightslider/js/lightslider.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#lightSlider").lightSlider({
+                item: 1,
+                auto: true,
+                pauseOnHover: true,
+                loop: true
+            });
+        });
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+
+            header .logoGrubu {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+        .logoSol img {
+            max-height: 50px;
+        }
+
+        .logoSag {
+            display: flex;
+            gap: 15px;
+        }
+
+            .logoSag div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: white;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                transition: transform 0.3s;
+            }
+
+                .logoSag div img {
+                    max-width: 20px;
+                }
+
+                .logoSag div:hover {
+                    transform: scale(1.1);
+                    background-color: #ff6600;
+                }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+            nav ul li {
+                margin: 0 10px;
+            }
+
+                nav ul li a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 16px;
+                }
+
+                    nav ul li a:hover {
+                        color: #ff6600;
+                    }
+
+        #cta-banner {
+            background: url('img/cta-bg.jpg') no-repeat center center/cover;
+            text-align: center;
+            color: white;
+            padding: 50px 20px;
+        }
+
+            #cta-banner h2 {
+                font-size: 2.5em;
+                margin: 0 0 10px;
+            }
+
+            #cta-banner button {
+                background-color: #ff6600;
+                color: white;
+                padding: 15px 30px;
+                border: none;
+                border-radius: 5px;
+                font-size: 1.2em;
+                cursor: pointer;
+                transition: background-color 0.3s, transform 0.3s;
+            }
+
+                #cta-banner button:hover {
+                    background-color: #cc5200;
+                    transform: scale(1.05);
+                }
+
+        .vitrinKategoriler,
+        .vitrinÜrünler {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+            .vitrinKategoriler div,
+            .vitrinÜrünler div {
+                text-align: center;
+                flex: 1 1 calc(33.33% - 20px);
+                max-width: calc(33.33% - 20px);
+                transition: transform 0.3s;
+            }
+
+                .vitrinKategoriler div:hover img,
+                .vitrinÜrünler div:hover img {
+                    transform: scale(1.1);
+                }
+
+            .vitrinKategoriler img,
+            .vitrinÜrünler img {
+                width: 100%;
+                border-radius: 5px;
+                height: auto;
+                transition: transform 0.3s;
+            }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+            footer ul {
+                list-style: none;
+                padding: 0;
+            }
+
+                footer ul li {
+                    margin: 5px 0;
+                }
+
+                    footer ul li a {
+                        color: white;
+                        text-decoration: none;
+                    }
+
+                        footer ul li a:hover {
+                            color: #ff6600;
+                        }
+
+            footer .footerortaSag {
+                margin-top: 20px;
+            }
+
+                footer .footerortaSag form {
+                    display: flex;
+                    align-items: center;
+                }
+
+                footer .footerortaSag input {
+                    padding: 10px;
+                    border: none;
+                    border-radius: 5px 0 0 5px;
+                    outline: none;
+                    flex: 1;
+                }
+
+                footer .footerortaSag button {
+                    padding: 10px;
+                    background-color: #ff6600;
+                    color: white;
+                    border: none;
+                    border-radius: 0 5px 5px 0;
+                    cursor: pointer;
+                    transition: background-color 0.3s;
+                }
+
+                    footer .footerortaSag button:hover {
+                        background-color: #cc5200;
+                    }
+
+        @media (max-width: 768px) {
+            .vitrinKategoriler div,
+            .vitrinÜrünler div {
+                flex: 1 1 calc(50% - 20px);
+                max-width: calc(50% - 20px);
+            }
+
+            header .logoGrubu,
+            footer {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+                nav ul li {
+                    margin: 5px 0;
+                }
+        }
+
+        @media (max-width: 480px) {
+            .vitrinKategoriler div,
+            .vitrinÜrünler div {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="tasiyici">
+        <header class="girinti">
+            <div class="logoGrubu">
+                <div class="logoSol">
+                    <img src="img/dM_logo.PNG" alt="Divano Mobilya">
+                </div>
+                <div class="logoSag">
+                    <div><img src="img/hesap.png" alt="Hesabım"></div>
+                    <div><img src="img/arama.jpg" alt="Arama"></div>
+                    <div><img src="img/sepet.jpg" alt="Sepetim"></div>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Anasayfa</a></li>
+                    <li><a href="#">Ürünler</a></li>
+                    <li><a href="#">Online Alışveriş</a></li>
+                    <li><a href="#">Hakkımızda</a></li>
+                    <li><a href="#">İletişim</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="slider">
+            <ul id="lightSlider">
+                <li>
+                    <div>
+                        <h3>Birinci Sınıf Malzemeler</h3>
+                        <p>Lorem ipsum Cupidatat quis pariatur anim.</p>
+                    </div>
+                    <img src="img/sliderFoto/slide-1.jpg" alt="Slider Foto 1">
+                </li>
+                <li>
+                    <div>
+                        <h3>İkinci Slide</h3>
+                        <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+                    </div>
+                    <img src="img/sliderFoto/slide-2.jpg" alt="Slider Foto 2">
+                </li>
+                <li>
+                    <img src="img/sliderFoto/slide-3.jpg" alt="Slider Foto 3">
+                </li>
+            </ul>
+        </div>
+
+        <div id="vitrin" class="girinti">
+            <div>
+                <h4>Önerilen Kategoriler</h4>
+                <div class="vitrinBaslik">
+                    <p>Sizin için Seçtiğimiz Kategoriler</p>
+                    <a href="#">Daha Fazlası</a>
+                </div>
+                <div class="vitrinKategoriler">
+                    <div>
+                        <h5>Yatak Odaları</h5>
+                        <img src="img/kat1.jpg" alt="Kategori 1">
+                    </div>
+                    <div>
+                        <h5>Mutfaklar</h5>
+                        <img src="img/kat2.jpg" alt="Kategori 2">
+                    </div>
+                    <div>
+                        <h5>Oturma Odaları</h5>
+                        <img src="img/kat3.jpg" alt="Kategori 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="cta-banner">
+            <h2>Hayalinizdeki Tasarımı Keşfedin!</h2>
+            <p>Özel mobilya koleksiyonlarımızı şimdi inceleyin.</p>
+            <button onclick="window.location.href='urunler.html'">Hemen Alışverişe Başla</button>
+        </div>
+
+        <div id="vitrin" class="girinti">
+            <div>
+                <h4>Popüler Ürünler</h4>
+                <div class="vitrinBaslik">
+                    <p>En Sevdiğiniz Ürünler</p>
+                    <a href="#">Daha Fazlası</a>
+                </div>
+                <div class="vitrinÜrünler">
+                    <div>
+                        <img src="img/urun1.jpg" alt="Ürün 1">
+                        <h5>Bursa</h5>
+                        <span class="eskiFiyat">10.000 TL</span>
+                        <span class="yeniFiyat">8.000 TL</span>
+                    </div>
+                    <div>
+                        <img src="img/2.jpg" alt="Ürün 2">
+                        <h5>Manisa</h5>
+                        <span class="eskiFiyat">17.000 TL</span>
+                        <span class="yeniFiyat">14.000 TL</span>
+                    </div>
+                    <div>
+                        <img src="img/kat3.jpg" alt="Ürün 3">
+                        <h5>Konya</h5>
+                        <span class="eskiFiyat">13.000 TL</span>
+                        <span class="yeniFiyat">9.500 TL</span>
+                    </div>
+                    <div>
+                        <img src="img/kat1.jpg" alt="Ürün 4">
+                        <h5>Antep</h5>
+                        <span class="eskiFiyat">12.000 TL</span>
+                        <span class="yeniFiyat">9.000 TL</span>
+                    </div>
+                    <div>
+                        <img src="img/3 (1).jpg" alt="Ürün 5">
+                        <h5>İstanbul</h5>
+                        <span class="eskiFiyat">20.000 TL</span>
+                        <span class="yeniFiyat">17.000 TL</span>
+                    </div>
+                    <div>
+                        <img src="img/1.jpg" alt="Ürün 6">
+                        <h5>İzmir</h5>
+                        <span class="eskiFiyat">15.000 TL</span>
+                        <span class="yeniFiyat">10.000 TL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="takipEt">
+            <div>
+                <h3>Bizi Takip Edin</h3>
+                <div class="socialIcons">
+                    <a href="#"><img src="img/ico/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="img/ico/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="img/ico/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="img/ico/youtube.png" alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footerorta">
+                <div class="footerortaSol">
+                    <ul>
+                        <li><a href="#">Anasayfa</a></li>
+                        <li><a href="#">Ürünler</a></li>
+                        <li><a href="#">Online Alışveriş</a></li>
+                        <li><a href="#">Hakkımızda</a></li>
+                        <li><a href="#">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footerortaSag">
+                    <ul>
+                        <li><a href="#">Müşteri Hizmetleri</a></li>
+                        <li><a href="#">Sıkça Sorulan Sorular</a></li>
+                        <li><a href="#">İade ve Değişim</a></li>
+                        <li><a href="#">Kargo Bilgileri</a></li>
+                    </ul>
+                    <form>
+                        <input type="email" placeholder="E-posta adresinizi girin">
+                        <button type="submit">Abone Ol</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footerAlt">
+                <p>&copy; 2024 Divano Mobilya. Tüm Hakları Saklıdır.</p>
+                <div class="socialIcons">
+                    <a href="#"><img src="img/ico/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="img/ico/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="img/ico/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="img/ico/youtube.png" alt="YouTube"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
+
